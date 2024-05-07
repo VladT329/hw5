@@ -25,7 +25,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 5");
-        for (int d = 1904; d < 2070; d = d + 4) {
+        for (int d = 1904; d <= 2096; d = d + 4) {
             System.out.println(d + " является високосным");
         }
         System.out.println();
@@ -52,12 +52,12 @@ public class Main {
         System.out.println();
 
         System.out.println("Задание 9");
-        int casH = 29000;
-        int totaL = 0;
-        for (int montH = 1; montH < 13; montH = montH + 1){
-            totaL = totaL + totaL/100;
-            totaL = totaL + casH;
-            System.out.println("Месяц " + montH + ", сумма накоплений равна " + totaL + " рублей");
+        int salary = 29000;
+        int savings = 29000;
+        for (int monthIndex = 1; monthIndex < 13; monthIndex = monthIndex + 1){
+            savings = savings + savings/100;
+            savings = savings + salary;
+            System.out.println("Месяц " + monthIndex + ", сумма накоплений равна " + savings + " рублей");
         }
         System.out.println();
 
